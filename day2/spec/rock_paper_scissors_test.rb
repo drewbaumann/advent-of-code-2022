@@ -8,7 +8,7 @@ class RockPaperScissorsTest < Minitest::Test
       it "returns the player's score" do
         rock_paper_scissors =
           RockPaperScissors.new(puzzle_file_path: "spec/test_input.txt")
-        assert 15, rock_paper_scissors.player_score
+        assert_equal 15, rock_paper_scissors.player_score
       end
     end
   end
@@ -20,7 +20,7 @@ class RockPaperScissorsTest < Minitest::Test
           puzzle_file_path: "spec/test_input.txt",
           strategy_guide: RockPaperScissors::OUTCOME_STRATEGY_GUIDE
         )
-        assert 12, rock_paper_scissors.player_score
+        assert_equal 12, rock_paper_scissors.player_score
       end
     end
   end
