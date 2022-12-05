@@ -1,4 +1,3 @@
-# elf_calories.rb
 require "minitest/autorun"
 require "minitest/spec"
 require_relative "../rock_paper_scissors"

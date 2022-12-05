@@ -22,7 +22,7 @@ class ElfCalories
     counter = 0
 
     File.readlines(@input_file_path).each do |line|
-      line = line.chomp
+      line.chomp!
 
       elves["elf_#{counter}"] ||= 0
 
